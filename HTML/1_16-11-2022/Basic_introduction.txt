@@ -1,0 +1,50 @@
+what is a HTML??
+-> Language, which is used to show content on the browser.
+-> it is provide structure of design.
+
+HTML -> hyper text markup Language.
+
+when it started ?? -> 1993
+who's started --> tim berner's lee
+
+to create a file -> file_name.html or file_name.htm
+
+What is tag??
+<html> </html> -> element written with angle brecket it is known as tag.
+
+What is an element??
+word written in angle brecket it is known as element.
+in <html> tag html is an element.
+
+what is an opening / closing tag ??
+to create a structure write opening tag i.e. <html>
+to end a structure write closing tag. i.e. </html>
+
+tags in html :
+basic tag -> <p> <pre>
+heading tag -> <h1>....<h6>
+break line
+horizontal line
+img
+anchor
+iframe
+about colors
+auto structure
+meta tag
+diff between html and html5
+formatting tag
+html layout
+audio and video
+svg and canvas -> graphics tag
+div and span tag diff
+table
+list
+imagemap
+form  -> input , textarea, select 
+psd to html -> 
+
+for refresh a page press -> F5
+for open alter page -> alt + Tab // window + Tab
+
+what is an attribute??
+-> it is an additional functionality
