@@ -1,0 +1,5 @@
+ImageMap used to create a link on some portion on image.
+
+tag -> <map> tag, <area> tag
+
+shape -> rectangle, circle, polygon
