@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- use to create HTML forms -->
+    <!-- name - > form name 
+        remember that do not allow space between in form name (MyForm, my_form)
+
+        action -> give the page name which you want open after click on button.
+
+        method -> get, post
+        get => it show form information in URL.
+            there are limit to display information in URL.
+        
+        post => send whole current page data to the next page.
+        wrap your data and send to the next page
+    -->
+    <form action="" name="" method="">
+      <!-- input tag ->
+        types -> text, radio, checkbox, submit, button, reset, date ...... -->
+      <label for="fname">first name:</label>
+      <input type="text" id="fname" placeholder="Enter your name" />
+      <br /><br />
+
+      <label for="">Password:</label>
+      <input type="password" placeholder="Enter Password" /><br /><br />
+
+      <!-- single option selection from multiple option -->
+      <label for="">Gender</label>
+      <input type="radio" name="gen" id="" />Male
+      <input type="radio" name="gen" id="" />Female <br /><br />
+      <!-- checkbox used for select multiple option from given option -->
+      <label for="">Subject selection</label>
+      <input type="checkbox" name="s1" id="" />HTML
+      <input type="checkbox" name="s2" id="" />CSS
+      <input type="checkbox" name="s3" id="" />Javascript
+    </form>
+  </body>
+</html>
