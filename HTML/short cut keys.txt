@@ -1,0 +1,11 @@
+1 copy -> ctrl + c
+2 paste -> ctrl + v
+3 cut -> ctrl + x
+4 select all -> ctrl + a
+5 save -> ctrl + s
+6 find -> ctrl + f
+7 undo -> ctrl  + z
+8 redu -> ctrl + y
+9 for suggesstion -> ctrl + space
+10 for comment -> ctrl + /
+11 page alternate -> alt + tab
