@@ -1,0 +1,24 @@
+what is css?
+-> which is help you create website design.
+
+full form -> Cascading stylesheet
+
+css and css3
+
+responsive website -> mobile screen, tablet, mini leptop, large screen leptop.
+
+how many ways to create css / types of css :
+(1) inline -> apply with style attribute
+(2) internal -> apply in <style> tag in <head> tag
+(3) external ->create an external file and link with <link> tag.
+
+selectors in css :
+(1) universal selector 
+(2) element selector 
+(3) id selector
+(4) class selector
+(5) group selector
+
+syntax : for internal / external css :
+
+selector { property : value; }
