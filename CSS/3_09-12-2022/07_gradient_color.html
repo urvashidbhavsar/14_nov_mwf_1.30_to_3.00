@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .div1,
+      .div2,
+      .div3 {
+        height: 200px;
+        width: 200px;
+        margin: 10px;
+        padding: 20px;
+      }
+      .div1 {
+        background: linear-gradient(
+          to left,
+          #123456 20%,
+          #aabf13 45%,
+          #fedcaa 81%,
+          pink 93%
+        );
+      }
+      .div2 {
+        background: radial-gradient(
+          circle at top,
+          #123456 11%,
+          #aabf13 51%,
+          #fedcaa 69%,
+          pink 79%
+        );
+      }
+      .div3 {
+        /* set degree in only conic-gradient */
+        background: conic-gradient(
+          #053566 22deg,
+          #a2b611 61deg,
+          #5c3e11 137deg,
+          #831a2c 309deg,
+          #053566 346deg
+        );
+      }
+    </style>
+  </head>
+  <body>
+    <!-- gradient color is combination of two or more color -->
+    <div class="div1"></div>
+    <div class="div2"></div>
+    <div class="div3"></div>
+  </body>
+</html>
