@@ -1,0 +1,18 @@
+position indicate how your element positioning in the browser.
+
+position -> 5 values
+
+static -> which is a default.
+fixed -> for fixed a content on browser.
+sticky -> stick some position.
+relative (parent) -> 
+absolute (as child)
+
+this 4 property used with position -> 
+left, bottom, top, right 
+
+z-index -> work as priority
+
+font awesome website -> fontawesome.com
+
+cdn -> font swesome cdn -> cdnjs.com
