@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .main {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+      }
+      .sub1,
+      .sub3,
+      .sub5 {
+        height: 100px;
+        width: 100px;
+        background-color: lightgoldenrodyellow;
+        border: 2px solid black;
+      }
+      .sub2,
+      .sub4 {
+        height: 100px;
+        width: 100px;
+        background-color: rgb(238, 238, 101);
+        border: 2px solid black;
+      }
+      .sub1 {
+        flex: 1;
+      }
+      .sub2 {
+        flex: 2;
+      }
+      .sub3 {
+        flex: 3;
+      }
+      .sub4 {
+        flex: 4;
+      }
+      .sub5 {
+        flex: 5;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main">
+      <div class="sub1"><h1>1</h1></div>
+      <div class="sub2"><h1>2</h1></div>
+      <div class="sub3"><h1>3</h1></div>
+      <div class="sub4"><h1>4</h1></div>
+      <div class="sub5"><h1>5</h1></div>
+    </div>
+  </body>
+</html>
