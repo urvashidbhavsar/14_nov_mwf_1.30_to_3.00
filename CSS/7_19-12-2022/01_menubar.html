@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      a {
+        text-decoration: none;
+      }
+      ul {
+        list-style-type: none;
+      }
+      .header {
+        background-color: lightblue;
+      }
+      .container {
+        margin-left: 80px;
+        margin-right: 80px;
+      }
+      .header-nav {
+        padding: 20px;
+        display: flex;
+      }
+      /* parent child */
+      .header-nav .left-logo {
+        padding: 30px;
+        flex: 1;
+      }
+      .header-nav .left-logo a {
+        font-size: 30px;
+      }
+      .header-nav .left-logo span {
+        color: blue;
+      }
+      .header-nav .right-menu {
+        flex: 2;
+        padding: 23px;
+      }
+      .header-nav .right-menu ul {
+        /* background-color: antiquewhite; */
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+      .header-nav .right-menu li {
+        padding: 14px;
+      }
+      .search button:hover {
+        background-color: deeppink;
+        color: white;
+        border: none;
+      }
+      .search {
+        flex: 1;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        /* padding: 30px; */
+      }
+      .search button {
+        height: 40px;
+        width: 130px;
+        border: 2px solid deeppink;
+        background: transparent;
+        font-weight: 700;
+        color: deeppink;
+        border-radius: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <section class="header">
+      <div class="container">
+        <div class="header-nav">
+          <div class="left-logo">
+            <a href=""
+              ><span class="fa-solid fa-handshake-simple"></span>Masterwork</a
+            >
+          </div>
+          <div class="right-menu">
+            <ul>
+              <li><a href="">Home</a></li>
+              <li><a href="">About</a></li>
+              <li><a href="">Services</a></li>
+              <li>
+                <a href=""
+                  >Pages <span class="fa-solid fa-angle-down"></span
+                ></a>
+              </li>
+              <li><a href="">Contact</a></li>
+            </ul>
+          </div>
+          <div class="search">
+            <button>schedule a demo</button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
