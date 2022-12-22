@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      div {
+        height: 150px;
+        width: 150px;
+        background-color: rebeccapurple;
+        margin: 10px auto;
+        transition: 1s all ease;
+      }
+      .div1:hover {
+        /* flipping */
+        transform: rotateX(50deg);
+      }
+      .div2:hover {
+        transform: rotateY(360deg);
+      }
+      .div3:hover {
+        transform: rotate(-40deg);
+      }
+      .div4:hover {
+        transform: rotateX(45deg) rotateY(45deg) rotateZ(90deg);
+      }
+      .div5:hover {
+        transform: rotateZ(90deg);
+      }
+      .div6:hover {
+        transform: rotate3d(1, -1, 0, 270deg);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="div1"><h1>div1</h1></div>
+    <div class="div2"><h1>div2</h1></div>
+    <div class="div3"><h1>div3</h1></div>
+    <div class="div4"><h1>div4</h1></div>
+    <div class="div5"><h1>div5</h1></div>
+    <div class="div6"><h1>div6</h1></div>
+  </body>
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      div {
+        height: 100px;
+        width: 100px;
+        background-color: lightseagreen;
+      }
+      .div1 {
+        transition-duration: 1s;
+        /* transition-delay: 1s; */
+        transition-timing-function: ease;
+        transition-property: all;
+        /* transition: duration property timing-function;
+            transition-property: all;
+            transition-delay: 1s;
+            transition-duration: 1s;
+            transition-timing-function: ease / ease-in / ease-in-out / ease-out / linear; */
+      }
+      .div1:hover {
+        width: 200px;
+        /* height: 200px; */
+        /* background-color: blue; */
+      }
+      .div2 {
+        transition: 1s all ease-in;
+      }
+      .div2:hover {
+        width: 200px;
+      }
+      .div3 {
+        transition: 1s all ease-out;
+      }
+      .div3:hover {
+        width: 200px;
+      }
+      .div4 {
+        transition: 1s all ease-in-out;
+      }
+      .div4:hover {
+        width: 200px;
+      }
+      .div5 {
+        transition: 1s all linear;
+      }
+      .div5:hover {
+        width: 200px;
+      }
+      .div6 {
+        transition: 1s all cubic-bezier(0.645, 0.045, 0.355, 1);
+      }
+      .div6:hover {
+        width: 200px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- transition means smooth move -->
+    <div class="div1">1</div>
+    <br />
+    <div class="div2">2</div>
+    <br />
+    <div class="div3">3</div>
+    <br />
+    <div class="div4">4</div>
+    <br />
+    <div class="div5">5</div>
+    <br />
+    <div class="div6">6</div>
+  </body>
+</html>

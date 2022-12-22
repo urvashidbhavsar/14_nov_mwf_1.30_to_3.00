@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      div {
+        height: 150px;
+        width: 150px;
+        background-color: rebeccapurple;
+        transition: 1s ease all;
+        margin: auto;
+      }
+      .div1:hover {
+        transform: scale(0.2);
+      }
+      .div2:hover {
+        transform: scaleX(1.5);
+      }
+      .div3:hover {
+        transform: scaleY(1.2);
+      }
+      .div4:hover {
+        transform: scaleX(0.5) scaleY(0.2) scaleZ(0.5);
+      }
+      .div5:hover {
+        transform: scale3d(1.2, 1.2, 1.2);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="div1"></div>
+    <br />
+    <div class="div2"></div>
+    <br />
+    <div class="div3"></div>
+    <br />
+    <div class="div4"></div>
+    <br />
+    <div class="div5"></div>
+  </body>
+</html>
