@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      div {
+        height: 200px;
+        width: 200px;
+        margin: auto;
+      }
+      .uper {
+        height: 200px;
+        width: 200px;
+        transform: rotateX(69deg) rotateY(4deg) rotateZ(314deg);
+        background-color: red;
+      }
+      .midd1 {
+        height: 200px;
+        width: 195px;
+        transform: rotateX(328deg) rotateY(319deg) rotateZ(357deg)
+          translate(-83px, -80px);
+        background-color: rgb(29, 17, 17);
+      }
+      .midd2 {
+        height: 184px;
+        width: 192px;
+        transform: rotateX(16deg) rotateY(318deg) rotateZ(356deg)
+          translate(125px, -268px);
+        background-color: rgb(98, 0, 255);
+      }
+      .main {
+        transition: 1s ease all;
+      }
+      .main:hover {
+        transform: rotateX(180deg) rotateY(180deg) rotateZ(90deg);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main">
+      <div class="uper"></div>
+      <div class="midd1"></div>
+      <div class="midd2"></div>
+    </div>
+  </body>
+</html>

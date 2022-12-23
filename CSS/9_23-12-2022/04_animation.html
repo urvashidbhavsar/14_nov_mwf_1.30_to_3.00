@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* animation: name duration timing-function delay iteration-count direction fill-mode;;
+            animation-name: ;
+            animation-duration: ;
+            animation-timing-function: linear;
+            animation-delay: ;
+            animation-iteration-count: ;
+            animation-direction: ;
+            animation-fill-mode: ; */
+      .div1 {
+        height: 100px;
+        width: 100px;
+        background-color: rgb(80, 80, 216);
+        animation-name: example1;
+        animation-timing-function: ease;
+        animation-duration: 4s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+      }
+      /* create an animation */
+      @keyframes example1 {
+        from {
+          margin-left: 0;
+          margin-top: 10px;
+          transform: rotate(0);
+        }
+        to {
+          margin-left: 550px;
+          margin-top: 120px;
+          transform: rotate(180deg);
+          border-radius: 50%;
+          background-color: rgba(0, 0, 255, 0.146);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="div1"></div>
+  </body>
+</html>
