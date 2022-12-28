@@ -1,0 +1,92 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.main {
+  padding: 20px;
+}
+.main .sub {
+  display: flex;
+}
+.main .sub .left {
+  flex: 1;
+  padding: 20px;
+}
+.main .sub .left h5 {
+  color: magenta;
+  font-size: 18px;
+  padding-bottom: 20px;
+}
+.main .sub .left h1 {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  padding-bottom: 20px;
+}
+.main .sub .left p {
+  color: gray;
+  font-size: 18px;
+  padding-bottom: 20px;
+}
+.main .sub .left button {
+  height: 40px;
+  width: 120px;
+  background-color: blue;
+  color: wheat;
+  border: none;
+  border-radius: 5px;
+}
+.main .sub .right {
+  flex: 1;
+  padding: 20px;
+}
+.main .sub .right img {
+  height: 400px;
+  width: 450px;
+}
+
+@media (max-width: 576px) {
+  .main .sub {
+    display: flex;
+    flex-direction: column;
+  }
+  .main .sub .right img {
+    height: 300px;
+    width: 350px;
+  }
+}
+@media (min-width: 576px) {
+  .main .sub {
+    display: flex;
+    flex-direction: column;
+  }
+  .main .sub .right img {
+    height: 300px;
+    width: 350px;
+  }
+}
+@media (min-width: 768px) {
+  .main .sub {
+    display: flex;
+    flex-direction: column;
+  }
+  .main .sub .right img {
+    height: 300px;
+    width: 550px;
+  }
+}
+@media (min-width: 992px) {
+  .main .sub {
+    display: flex;
+    flex-direction: row;
+  }
+  .main .sub .right img {
+    height: 300px;
+    width: 400px;
+  }
+}
+@media (min-width: 1200px) {
+  .main .sub .right img {
+    height: 400px;
+    width: 500px;
+  }
+}

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      @media (max-width: 576px) {
+        p {
+          background-color: lightcoral;
+          font-size: 20px;
+        }
+      }
+      @media (min-width: 576px) {
+        p {
+          background-color: lightgreen;
+          font-size: 20px;
+          padding: 20px;
+        }
+      }
+      @media (min-width: 768px) {
+        p {
+          background-color: rgb(221, 144, 238);
+        }
+      }
+      @media (min-width: 992px) {
+        p {
+          background-color: rgb(144, 161, 238);
+          padding: 0;
+        }
+      }
+      @media (min-width: 1200px) {
+        p {
+          background-color: lightblue;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- 
+        screen set with your device screen
+
+        min - mobile screen       -  < 576px (max size)
+        mobile screen             -  > 576px (min-size)
+        tablet screen             -  > 768px (min-size)
+        mini leptop               -  > 992px (min-size)
+        large screen laptop       -  > 1200px (min-size) -> 1140px
+        extra large screen (tv)   -  > 1400px (min-size)
+     -->
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. A enim dicta
+      ducimus iusto explicabo, voluptatum deserunt, impedit modi assumenda
+      doloribus dolorum debitis amet inventore. Enim saepe architecto natus
+      perspiciatis vel! Lorem ipsum dolor sit amet, consectetur adipisicing
+      elit. Quo aliquid accusamus ducimus, inventore nesciunt veniam quia
+      laborum nemo ex molestias temporibus possimus aperiam aspernatur eum
+      soluta debitis. Accusantium, temporibus placeat?
+    </p>
+  </body>
+</html>
