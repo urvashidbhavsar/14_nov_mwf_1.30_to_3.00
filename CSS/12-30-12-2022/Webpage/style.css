@@ -1,0 +1,88 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+a {
+  text-decoration: none;
+}
+ul {
+  list-style: none;
+}
+.container {
+  margin-left: 80px;
+  margin-right: 80px;
+}
+/* ================ header with contact ===================== */
+
+.header .header-contact-p {
+  padding: 10px;
+}
+.header .header-contact-f {
+  display: flex;
+  justify-content: space-between;
+}
+.header .header-contact-f .contact-left ul {
+  display: flex;
+  gap: 20px;
+}
+.header .header-contact-f .contact-left ul a {
+  color: black;
+  font-weight: 700;
+}
+.header .header-contact-f .contact-left ul a:hover {
+  color: #0abf53;
+}
+.header .header-contact-f .social-right {
+  display: flex;
+  gap: 20px;
+}
+.header .header-contact-f .social-right .social a {
+  color: black;
+  transition: 1s all ease;
+}
+.header .header-contact-f .social-right .social a:hover {
+  color: #0abf53;
+}
+/* ================ header- navigations ======================== */
+.header-nav {
+  background-color: black;
+}
+.header-nav a {
+  color: white;
+}
+.header-nav .header-nav-p {
+  padding: 20px;
+}
+.header-nav .header-nav-p .header-top-nav {
+  display: flex;
+}
+.header-nav .header-top-nav .logo {
+  flex: 1;
+}
+.header-nav .header-top-nav .logo a {
+  font-size: 45px;
+  position: relative;
+}
+.header-nav .header-top-nav .logo a span {
+  font-size: 35px;
+}
+.header-nav .header-top-nav .logo a::before {
+  content: "";
+  position: absolute;
+  left: 45px;
+  top: 21px;
+  height: 5px;
+  width: 36px;
+  background-color: white;
+  display: block;
+  border-radius: 10px 0px 10px 0px;
+}
+.header-nav .header-top-nav .nav {
+  flex: 1;
+}
+.header-nav .header-top-nav .search {
+  /* flex: 1; */
+}

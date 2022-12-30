@@ -1,0 +1,6 @@
+@media (min-width: 576px) {
+  /* ================ header with contact ===================== */
+  .header {
+    display: none;
+  }
+}
