@@ -1,0 +1,23 @@
+@media (min-width: 992px) {
+  .container {
+    margin-left: 80px;
+    margin-right: 80px;
+  }
+  /* ================ header with contact ===================== */
+  .header {
+    display: block;
+  }
+  /* ================ header- navigations ======================== */
+  .header-nav .header-top-nav .nav {
+    display: block;
+  }
+  .header-nav .header-top-nav .btn button {
+    display: none;
+  }
+  .header-nav .header-top-nav .search {
+    flex: 0;
+  }
+  .header-nav .header-top-nav .btn {
+    flex: 0;
+  }
+}

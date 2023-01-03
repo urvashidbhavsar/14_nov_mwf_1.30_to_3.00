@@ -1,0 +1,24 @@
+@media (max-width: 576px) {
+  .container {
+    margin-left: 30px;
+    margin-right: 30px;
+  }
+  /* ================ header with contact ===================== */
+  .header {
+    display: none;
+  }
+  /* ================ header- navigations ======================== */
+  .header-nav .header-top-nav .nav {
+    display: none;
+  }
+  .header-nav .header-top-nav .btn button {
+    display: block;
+  }
+  .header-nav .header-top-nav .search {
+    flex: 3;
+  }
+  /* =============== home page =================== */
+  .home-page .back-pos .home-page-info {
+    width: 400px;
+  }
+}
