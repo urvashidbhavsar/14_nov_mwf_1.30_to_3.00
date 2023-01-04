@@ -1,0 +1,45 @@
+@media (min-width: 992px) {
+  .container {
+    margin-left: 80px;
+    margin-right: 80px;
+  }
+  /* ================ header with contact ===================== */
+  .header {
+    display: block;
+  }
+  /* ================ header- navigations ======================== */
+  .header-nav .header-top-nav .nav {
+    display: block;
+  }
+  .header-nav .header-top-nav .btn button {
+    display: none;
+  }
+  .header-nav .header-top-nav .search {
+    flex: 0;
+  }
+  .header-nav .header-top-nav .btn {
+    flex: 0;
+  }
+  /* ============== about us ================ */
+  .about .about-p {
+    padding: 50px;
+  }
+  .about .about-us {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .about .about-us .about-left img {
+    height: 400px;
+    width: 280px;
+  }
+  /* ============== services =============== */
+  .services .ser-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    padding: 0;
+  }
+  .services .services-p {
+    padding: 20px;
+  }
+}
