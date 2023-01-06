@@ -1,0 +1,34 @@
+@media (min-width: 768px) {
+  /* ================ header with contact ===================== */
+  /* not needed */
+  /* ================ header- navigations ======================== */
+  .header-nav .header-top-nav .nav {
+    display: none;
+  }
+  .header-nav .header-top-nav .btn button {
+    display: block;
+  }
+  .header-nav .header-top-nav .search {
+    flex: 5;
+  }
+  /* =============== home page =================== */
+  .home-page .back-pos .home-page-info {
+    width: 450px;
+  }
+  /* ============== about us ================ */
+  .about .about-p {
+    padding: 50px 0px;
+  }
+  .about .about-us {
+    display: flex;
+    flex-direction: row;
+  }
+  .about .about-us .about-left img {
+    height: 300px;
+    width: 200px;
+  }
+  /*================ best services ================ */
+  .best-ser .services-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
