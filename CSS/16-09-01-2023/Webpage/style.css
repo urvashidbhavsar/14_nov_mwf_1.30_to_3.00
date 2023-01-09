@@ -1,0 +1,472 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+a {
+  text-decoration: none;
+}
+ul {
+  list-style: none;
+}
+.container {
+  margin-left: 80px;
+  margin-right: 80px;
+}
+/* ================ header with contact ===================== */
+
+.header .header-contact-p {
+  padding: 10px;
+}
+.header .header-contact-f {
+  display: flex;
+  justify-content: space-between;
+}
+.header .header-contact-f .contact-left ul {
+  display: flex;
+  gap: 20px;
+}
+.header .header-contact-f .contact-left ul a {
+  color: black;
+  font-weight: 700;
+}
+.header .header-contact-f .contact-left ul a:hover {
+  color: #0abf53;
+}
+.header .header-contact-f .social-right {
+  display: flex;
+  gap: 20px;
+}
+.header .header-contact-f .social-right .social a {
+  color: black;
+  transition: 1s all ease;
+}
+.header .header-contact-f .social-right .social a:hover {
+  color: #0abf53;
+}
+/* ================ header- navigations ======================== */
+.header-nav {
+  background-color: black;
+}
+.header-nav a {
+  color: white;
+}
+.header-nav .header-nav-p {
+  padding: 20px;
+}
+.header-nav .header-nav-p .header-top-nav {
+  display: flex;
+}
+.header-nav .header-top-nav .logo {
+  flex: 1;
+}
+.header-nav .header-top-nav .logo a {
+  font-size: 45px;
+  position: relative;
+}
+.header-nav .header-top-nav .logo a span {
+  font-size: 35px;
+}
+.header-nav .header-top-nav .logo a::before {
+  content: "";
+  position: absolute;
+  left: 45px;
+  top: 21px;
+  height: 5px;
+  width: 36px;
+  background-color: white;
+  display: block;
+  border-radius: 10px 0px 10px 0px;
+}
+.header-nav .header-top-nav .nav {
+  flex: 1;
+}
+.header-nav .header-top-nav .nav ul {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 5px 0px;
+}
+.header-nav .header-top-nav .nav ul li {
+  padding: 20px;
+  color: white;
+}
+.header-nav .header-top-nav .search {
+  display: flex;
+  flex: 1;
+  padding: 17px 0px;
+  justify-content: flex-end;
+}
+.header-nav .header-top-nav .search .icons {
+  height: 20px;
+  width: 20px;
+  padding: 20px;
+  border-radius: 50%;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.header-nav .header-top-nav .search .icons-1 {
+  color: white;
+  padding: 8px;
+  font-size: 18px;
+}
+.header-nav .header-top-nav .btn {
+  flex: 1;
+  padding: 17px;
+  display: flex;
+  justify-content: flex-end;
+}
+.header-nav .header-top-nav .btn button {
+  display: none;
+  height: 40px;
+  width: 40px;
+  background: transparent;
+  border: 2px solid white;
+  border-radius: 5px;
+  color: white;
+}
+/* =============== home page =================== */
+.home-page .back-pos {
+  background-image: url(images/banner1.jpg);
+  background-size: cover;
+  background-position: center;
+  padding: 100px;
+}
+.home-page .back-pos .home-page-info {
+  background-color: white;
+  color: black;
+  height: auto;
+  width: 450px;
+  padding: 40px;
+  border-radius: 40px 0px;
+}
+.home-page .back-pos .home-page-info h1 {
+  font-size: 40px;
+  padding-bottom: 10px;
+}
+.home-page .back-pos .home-page-info p {
+  font-weight: 500;
+  padding-bottom: 10px;
+}
+.home-page .back-pos .home-page-info button {
+  height: 40px;
+  width: 120px;
+  background: green;
+  border: none;
+  color: white;
+  font-weight: 700;
+}
+.home-page .back-pos .home-page-info .btn {
+  display: grid;
+  place-items: start;
+}
+/* ============== about us ================ */
+.about .about-p {
+  padding: 50px;
+}
+.about .about-us {
+  display: flex;
+}
+.about .about-us .about-left {
+  flex: 1;
+  display: flex;
+}
+.about .about-us .about-left img {
+  height: 381px;
+  width: 258px;
+  border: 5px solid white;
+}
+.about .about-us .about-left .img2 {
+  transform: translate(-70px, 70px);
+}
+.about .about-us .about-right {
+  flex: 1;
+}
+.about .about-us .about-right h5 {
+  font-size: 35px;
+  padding-bottom: 10px;
+  font-family: Tangerine;
+}
+.about .about-us .about-right h5 span {
+  background-color: #0abf53;
+  color: white;
+}
+/* ====================== services ================ */
+.services {
+  background-color: aliceblue;
+}
+.services .services-p {
+  padding: 50px;
+}
+.services .heading {
+  padding-top: 30px;
+  text-align: center;
+}
+.services .heading p {
+  font-size: 20px;
+  color: gray;
+}
+.services .heading h1 {
+  font-size: 45px;
+  font-weight: 500;
+}
+.services .heading h1 span {
+  color: #0abf53;
+}
+.services .ser-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  padding: 20px;
+}
+.services .ser-grid .ser-infor {
+  background-color: white;
+  padding: 40px;
+  transition: 0.5s all ease;
+}
+.services .ser-grid .ser-infor-f {
+  display: flex;
+  gap: 10px;
+}
+.services .ser-grid .ser-infor-f .ser-left span {
+  color: #0abf53;
+  font-size: 30px;
+}
+.services .ser-grid .ser-infor-f .ser-right a {
+  color: black;
+}
+.services .ser-grid .ser-infor-f .ser-right h2 {
+  padding-bottom: 10px;
+}
+.services .ser-grid .ser-infor-f .ser-right p {
+  font-weight: 500;
+  color: gray;
+  padding-bottom: 10px;
+}
+.services .ser-grid .ser-infor-f .ser-right .link span {
+  transition: 0.5s ease all;
+  font-size: 15px;
+}
+.services .ser-grid .ser-infor:hover {
+  box-shadow: 0px 2px 10px rgba(128, 128, 128, 0.441);
+}
+.services .ser-grid .ser-infor .link1 {
+  transition: 0.5s ease all;
+}
+.services .ser-grid .ser-infor:hover .link1 {
+  color: #0abf53;
+}
+.services .ser-grid .ser-infor .angle:hover {
+  color: #0abf53;
+}
+.services .ser-grid .ser-infor .angle:hover span {
+  transform: translateX(5px);
+}
+
+/*================ best services ================ */
+.best-ser .best-ser-p {
+  padding: 50px;
+}
+.best-ser .heading {
+  text-align: center;
+}
+.best-ser .heading p {
+  font-size: 20px;
+  text-transform: uppercase;
+  color: gray;
+}
+.best-ser .heading h1 {
+  font-size: 40px;
+  text-transform: capitalize;
+  font-weight: 500;
+}
+.best-ser .heading h1 span {
+  color: #0abf53;
+}
+.best-ser .services-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 50px 0px;
+  justify-items: center;
+  gap: 25px;
+}
+.best-ser .services-grid .grid-box {
+  border-bottom: 2px solid rgba(128, 128, 128, 0.316);
+  transition: 0.5s ease all;
+}
+.best-ser .services-grid .grid-box .img-1 {
+  background-image: url(images/home-s1.jpg);
+  height: 250px;
+  border-radius: 10px 10px 0px 0px;
+  background-position: center;
+  background-size: cover;
+}
+.best-ser .services-grid .grid-box .img-2 {
+  background-image: url(images/home-s2.jpg);
+  height: 250px;
+  border-radius: 10px 10px 0px 0px;
+  background-position: center;
+  background-size: cover;
+}
+.best-ser .services-grid .grid-box .img-3 {
+  background-image: url(images/home-s3.jpg);
+  background-size: cover;
+  height: 250px;
+  border-radius: 10px 10px 0px 0px;
+  background-position: center;
+}
+.best-ser .services-grid .grid-box .content {
+  padding: 20px;
+}
+.best-ser .services-grid .grid-box .content a {
+  color: black;
+  transition: 0.5s ease all;
+}
+.best-ser .services-grid .grid-box .content p {
+  color: gray;
+  font-weight: 700;
+  padding-top: 20px;
+}
+.best-ser .services-grid .grid-box:hover {
+  box-shadow: 0px 2px 10px rgba(128, 128, 128, 0.441);
+}
+.best-ser .services-grid .grid-box:hover a {
+  color: #0abf53;
+}
+/* =============== welcome about us =================== */
+.about-uss {
+  background-color: aliceblue;
+}
+.about-uss .about-us-p {
+  padding-top: 50px;
+}
+.about-uss .about-flex {
+  display: flex;
+}
+/* .about-uss .about-flex .left-image img {
+
+  
+  clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+} */
+.about-uss .about-flex .right-content {
+  padding: 50px;
+}
+.about-uss .about-flex .right-content .heading {
+  text-align: center;
+  padding-bottom: 30px;
+}
+.about-uss .about-flex .right-content .heading p {
+  font-size: 20px;
+  color: gray;
+  font-weight: 500;
+}
+.about-uss .about-flex .right-content .heading h1 {
+  font-size: 40px;
+  font-weight: 500;
+}
+.about-uss .about-flex .right-content .heading span {
+  color: #0abf53;
+}
+.about-uss .about-flex .right-content .grid-box {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 25px;
+  justify-items: center;
+  padding: 50px 0px;
+}
+.about-uss .about-flex .right-content .grid-box .inner-grid {
+  display: flex;
+  gap: 15px;
+}
+.about-uss .about-flex .grid-box .inner-grid .icon .in-icon {
+  background-color: #0abf53;
+  color: white;
+  height: 65px;
+  width: 65px;
+  font-size: 30px;
+  display: grid;
+  place-content: center;
+  border-radius: 50%;
+}
+.about-uss .about-flex .grid-box .inner-grid .icon-text h3 {
+  font-size: 25px;
+  font-weight: 500;
+  padding-bottom: 15px;
+}
+.about-uss .about-flex .grid-box .inner-grid .icon-text p {
+  font-weight: 500;
+  color: gray;
+  line-height: 25px;
+}
+/* ================== garden ===================== */
+.garden-back-image {
+  background-image: url(images/home-s1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  /* filter: brightness(50%); */
+  color: white;
+  position: relative;
+  z-index: 1;
+  text-align: center;
+}
+.garden-back-image::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.558);
+  z-index: -1;
+}
+.garden-back-image .garden-p {
+  padding: 50px;
+}
+.garden-back-image .garden-content {
+  display: grid;
+  justify-items: center;
+}
+.garden-back-image .garden-content p {
+  font-size: 18px;
+  line-height: 30px;
+  padding-bottom: 20px;
+  width: 70%;
+}
+.garden-back-image .garden-content h1 {
+  font-size: 40px;
+  padding: 30px 0px;
+  width: 50%;
+}
+.garden-back-image .garden-content button {
+  height: 43px;
+  width: 120px;
+  border: none;
+  font-weight: 700;
+  font-size: 13px;
+  text-transform: uppercase;
+  transition: 0.5s ease all;
+}
+.garden-back-image .garden-content .btn {
+  display: flex;
+  gap: 20px;
+}
+.garden-back-image .garden-content .btn1 {
+  background: white;
+}
+.garden-back-image .garden-content .btn1:hover {
+  background-color: green;
+  color: white;
+}
+.garden-back-image .garden-content .btn2 {
+  background: #0abf53;
+  color: white;
+}
+.garden-back-image .garden-content .btn2:hover {
+  background-color: green;
+}
