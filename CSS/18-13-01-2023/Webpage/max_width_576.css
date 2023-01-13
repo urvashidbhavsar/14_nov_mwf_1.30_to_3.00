@@ -1,0 +1,93 @@
+@media (max-width: 576px) {
+  .container {
+    margin-left: 30px;
+    margin-right: 30px;
+  }
+  /* ================ header with contact ===================== */
+  .header {
+    display: none;
+  }
+  /* ================ header- navigations ======================== */
+  .header-nav .header-top-nav .nav {
+    display: none;
+  }
+  .header-nav .header-top-nav .btn button {
+    display: block;
+  }
+  .header-nav .header-top-nav .search {
+    flex: 3;
+  }
+  /* =============== home page =================== */
+  .home-page .back-pos .home-page-info {
+    width: 400px;
+  }
+  /* ============== about us ================ */
+  .about .about-p {
+    padding: 50px 0px;
+  }
+  .about .about-us {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  /* ============== services =============== */
+  .services .ser-grid {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 20px;
+    padding: 0;
+  }
+  .services .services-p {
+    padding: 20px;
+  }
+  /*================ best services ================ */
+  .best-ser .services-grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  /* ============ welcome about us ================== */
+  .about-uss .about-flex {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .about-uss .about-flex .right-content {
+    padding: 0px;
+  }
+  .about-uss .about-flex .right-content .grid-box {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  /* ================== garden ===================== */
+  .garden-back-image .garden-p {
+    padding: 50px;
+  }
+  .garden-back-image .garden-content p {
+    width: 100%;
+  }
+  .garden-back-image .garden-content h1 {
+    width: 100%;
+  }
+  /* ======================review ============================= */
+  .review .review-p {
+    padding: 20px;
+  }
+  .review .heading h1 {
+    font-size: 35px;
+  }
+  .review .client-review-f {
+    flex-direction: column;
+  }
+  /* =============== footer ================= */
+  .footer .footer-head-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .footer .footer-head-grid .logo {
+    border-right: 0;
+  }
+  .footer .footer-head-grid .social-icons {
+    justify-content: flex-start;
+  }
+  /* footer bottom */
+  .footer .footer-bottom-grid {
+    grid-template-columns: 1fr;
+  }
+}

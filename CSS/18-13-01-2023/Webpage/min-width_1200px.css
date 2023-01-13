@@ -1,0 +1,52 @@
+@media (min-width: 1200px) {
+  /* ============== about us ================ */
+  .about .about-us {
+    display: flex;
+    flex-direction: row;
+  } /* ============== services =============== */
+  .services .ser-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    padding: 20px;
+  }
+  .services .services-p {
+    padding: 50px;
+  }
+  /*================ best services ================ */
+  .best-ser .services-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  /* =============== welcome about us ================= */
+  .about-uss .about-flex {
+    display: flex;
+    flex-direction: row;
+  }
+  /* ================== garden ===================== */
+  .garden-back-image .garden-content h1 {
+    width: 50%;
+  }
+  /* ======================review ============================= */
+  .review .review-p {
+    padding: 50px;
+  }
+  .review .heading h1 {
+    font-size: 45px;
+  }
+
+  /* =============== footer ================= */
+  .footer .footer-head-grid {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+  }
+  .footer .footer-head-grid .logo {
+    border-right: 1px solid gray;
+  }
+  .footer .footer-head-grid .social-icons {
+    justify-content: flex-end;
+  }
+  /* footer bottom */
+  .footer .footer-bottom-grid {
+    grid-template-columns: 2fr 1fr 1fr 2fr;
+  }
+}
