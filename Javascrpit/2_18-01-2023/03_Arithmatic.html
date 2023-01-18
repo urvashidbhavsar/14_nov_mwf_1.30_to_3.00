@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let a = 10;
+      let b = 20;
+
+      document.writeln(a + b);
+      document.writeln(a - b);
+      document.writeln(a * b);
+      document.writeln(a / b);
+      document.writeln(a % b);
+
+      //  (++) increment and (--) decrement
+      /*  increment -> pre-increment (++a)
+                     post-increment (a++)
+        
+        decrement -> pre-decrement (--a)
+                    post-decrement(a--)
+    */
+      document.write("<br>");
+
+      let c = 1;
+      //   c++;
+      document.writeln(c++);
+      //  -> 1 than add 1  print than increment
+      document.writeln(c); //-> 2
+      ++c; // 3
+      document.writeln(++c);
+      //-> 3+1 = 3   increment than print
+
+      let d = 5;
+      document.write(d); // 5
+
+      document.write(d--); //5 print than decrement  -> 5
+      document.write(d); // 4 (only print)
+      document.write(--d); // decrement than print  -> 3
+
+      document.write("<br>");
+      let e = 5;
+      e++; //   5 + 1 = 6
+      document.write(e);
+
+      e = 5;
+      ++e; // 5 + 1 = 6
+      document.write(e);
+    </script>
+  </body>
+</html>
