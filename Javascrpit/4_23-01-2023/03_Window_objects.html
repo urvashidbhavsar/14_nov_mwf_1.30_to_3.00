@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      // shows only msg
+      function alert_popup() {
+        alert("Hello user");
+      }
+
+      //   take confirmation from user
+      function confirm_popup() {
+        if (confirm("Are you sure??") == true) {
+          //   alert("ok");
+          document.body.style.backgroundColor = "antiquewhite";
+        } else {
+          //   alert("cancel");
+          document.body.style.backgroundColor = "lightcoral";
+        }
+      }
+
+      //   it take input from user.
+      function prompt_popup() {
+        var user = prompt("Enter your name");
+        if (user == "") {
+          alert("enter username");
+        } else {
+          document.getElementById("head").innerHTML = user;
+          return false;
+        }
+      }
+
+      var x = "https://fonts.google.com/about";
+      function open_url() {
+        window.open(x);
+      }
+      function close_url() {
+        x = window.close();
+      }
+
+      function his_for() {
+        window.history.forward();
+      }
+    </script>
+  </head>
+  <body>
+    <button id="" onclick="alert_popup()">Alert</button>
+    <button id="" onclick="confirm_popup()">Confirm</button>
+    <button id="" onclick="prompt_popup()">Prompt</button>
+    <button onclick="open_url()">Open</button>
+    <button onclick="close_url()">close</button>
+
+    <button onclick="his_for()">Forward</button>
+
+    <h1 id="head"></h1>
+  </body>
+</html>

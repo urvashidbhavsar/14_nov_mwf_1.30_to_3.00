@@ -1,0 +1,13 @@
+Window object, Navigator Object, Screen Object, History Objects
+
+Window Object -> alert(), confirm(), prompt(), close(), open()
+
+=> alert(), confirm(), prompt() these 3 are also known as popup boxes.
+
+History Object -> go(), back(), forward()
+
+screen objects -> used to know about screen
+properties -> height, width, availheight, availwidth, colordepth,pixeldepth
+
+Navigator objects -> used to know about your browser
+properties -> appVersion, userAgent etc..
