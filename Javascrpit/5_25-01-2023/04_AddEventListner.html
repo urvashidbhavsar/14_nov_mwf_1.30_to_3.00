@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      function msg() {
+        alert("With function");
+      }
+    </script>
+  </head>
+  <body>
+    <button id="btn1" onclick="msg()">With Function</button>
+    <button id="btn2">With Add Event Listner</button>
+
+    <!-- always written this addeventlistner code in bottom of the body -->
+    <script>
+      var btn_add = document.getElementById("btn2");
+      btn_add.addEventListener("click", function () {
+        alert("using add Event listner");
+      });
+    </script>
+  </body>
+</html>
