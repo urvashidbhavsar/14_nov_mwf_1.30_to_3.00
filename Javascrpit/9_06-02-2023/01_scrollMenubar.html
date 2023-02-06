@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="01_style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="bg-img">
+        <div class="">
+          <div class="header-p">
+            <div class="header-flex">
+              <div class="logo">
+                <h1><a href="">Logo</a></h1>
+              </div>
+              <div class="nav-bar">
+                <ul>
+                  <li><button class="fa-solid fa-close close-btn"></button></li>
+                  <li><a href="">Home</a></li>
+                  <li><a href="">About</a></li>
+                  <li><a href="">Services</a></li>
+                  <li><a href="">Contact</a></li>
+                  <li><a href="">Help</a></li>
+                </ul>
+              </div>
+              <div class="btn">
+                <button class="dis-menu">
+                  <span class="fa-solid fa-bars"></span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <script>
+      function changebg() {
+        let header_flex = document.querySelector(".header-flex");
+        let nav_scroll = window.scrollY;
+
+        if (nav_scroll > 0) {
+          header_flex.classList.add("header-fix");
+        } else {
+          header_flex.classList.remove("header-fix");
+        }
+      }
+
+      window.addEventListener("scroll", changebg);
+    </script>
+  </body>
+</html>

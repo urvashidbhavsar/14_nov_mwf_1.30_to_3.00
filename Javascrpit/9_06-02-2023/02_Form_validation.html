@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="02_blankValidation.js"></script>
+    <script src="02_Reg_validation.js"></script>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        background-image: conic-gradient(
+          lightblue,
+          lightcoral,
+          lightseagreen,
+          lightblue
+        );
+      }
+      form {
+        width: 50%;
+        margin: 30px auto;
+        height: auto;
+        background-color: white;
+        padding: 20px;
+        box-shadow: 0px 0px 5px 2px black;
+      }
+      .row {
+        display: flex;
+        padding: 10px;
+      }
+      .col-1 {
+        flex: 1;
+        display: flex;
+        justify-content: end;
+        align-items: center;
+        padding-right: 20px;
+      }
+      .col-2 {
+        flex: 2;
+      }
+      input[type="text"],
+      [type="date"] {
+        height: 20px;
+        width: 200px;
+        padding: 5px;
+      }
+      span {
+        color: red;
+      }
+      input[type="submit"] {
+        height: 30px;
+        width: 120px;
+        color: white;
+        border: none;
+        background-color: blueviolet;
+      }
+    </style>
+  </head>
+  <body>
+    <form action="" name="form1">
+      <h1 style="text-align: center">Register</h1>
+      <!-- name -->
+      <div class="row">
+        <div class="col-1">
+          <label for="">Full name</label>
+        </div>
+        <div class="col-2">
+          <input type="text" id="fname" onkeyup="return name_reg_ex()" />
+          <span id="msg1"></span>
+        </div>
+      </div>
+      <!-- gender -->
+      <div class="row">
+        <div class="col-1">
+          <label for="">Gender</label>
+        </div>
+        <div class="col-2">
+          <input type="radio" name="gen" id="male" />Male
+          <input type="radio" name="gen" id="female" />Female
+          <input type="radio" name="gen" id="other" />Other
+          <span id="msg2"></span>
+        </div>
+      </div>
+      <!-- Date of birth -->
+      <div class="row">
+        <div class="col-1">
+          <label for="">Date of Birth</label>
+        </div>
+        <div class="col-2">
+          <input type="date" name="" id="dob" />
+          <span id="msg3"></span>
+        </div>
+      </div>
+      <!-- address -->
+      <div class="row">
+        <div class="col-1">
+          <label for="">Address</label>
+        </div>
+        <div class="col-2">
+          <textarea
+            name=""
+            class="addr"
+            id="addr"
+            cols="40"
+            rows="3"
+            onchange="return address_range()"
+          ></textarea>
+          <br />
+          <span id="msg4"></span>
+        </div>
+      </div>
+
+      <!-- button -->
+      <div class="row">
+        <div class="col-1"></div>
+        <div class="col-2">
+          <input
+            type="submit"
+            value="Register"
+            onclick="return check_form_valid()"
+          />
+        </div>
+      </div>
+    </form>
+  </body>
+</html>
