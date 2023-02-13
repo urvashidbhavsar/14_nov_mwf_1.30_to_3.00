@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- jquery cdn -->
+    <script src="https://code.jquery.com/jquery-3.6.3.js"></script>
+    <!-- bxslider css cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.15/jquery.bxslider.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.15/jquery.bxslider.css">
+    <!-- bxslider js cdn -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.15/jquery.bxslider.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $(".bxslider").bxSlider({
+                auto: true,
+                pager: false,
+                controls: true,
+                loop: true,
+                mode: "horizontal",
+                speed: 2000,
+                touchEnabled: false,
+                autoHover: true,
+            })
+        })
+    </script>
+    <style>
+        .images-1 {
+            background-image: url(../images/img1.jpg);
+            height: 600px;
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        .images-2 {
+            background-image: url(../images/img2.jpg);
+            height: 600px;
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        .images-3 {
+            background-image: url(../images/img3.jpg);
+            height: 600px;
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        .images-4 {
+            background-image: url(../images/img4.webp);
+            height: 600px;
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        .images-5 {
+            background-image: url(../images/img5.jpg);
+            height: 600px;
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        h1 {
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="bxslider">
+        <div class="images-1">
+            <h1>Image 1</h1>
+        </div>
+        <div class="images-2">
+            <h1>Image 2</h1>
+        </div>
+        <div class="images-3">
+            <h1> Image 3</h1>
+        </div>
+        <div class="images-4">
+            <h1> Image 4</h1>
+        </div>
+        <div class="images-5">
+            <h1> Image 5</h1>
+        </div>
+    </div>
+</body>
+
+</html>

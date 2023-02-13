@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <!-- jquery cdn -->
+  <script src="https://code.jquery.com/jquery-3.6.3.js"></script>
+  <script src="02_blankValidation.js"></script>
+  <script src="02_Reg_validation.js"></script>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background-image: conic-gradient(lightblue,
+          lightcoral,
+          lightseagreen,
+          lightblue);
+    }
+
+    form {
+      display: none;
+      width: 50%;
+      margin: 30px auto;
+      height: auto;
+      background-color: white;
+      padding: 20px;
+      box-shadow: 0px 0px 5px 2px black;
+    }
+
+    .row {
+      display: flex;
+      padding: 10px;
+    }
+
+    .col-1 {
+      flex: 1;
+      display: flex;
+      justify-content: end;
+      align-items: center;
+      padding-right: 20px;
+    }
+
+    .col-2 {
+      flex: 2;
+    }
+
+    input[type="text"],
+    [type="date"],
+    [type="password"] {
+      height: 20px;
+      width: 200px;
+      padding: 5px;
+    }
+
+    select {
+      height: 35px;
+      width: 210px;
+      padding: 5px;
+    }
+
+    span {
+      color: red;
+    }
+
+    input[type="submit"] {
+      height: 30px;
+      width: 120px;
+      color: white;
+      border: none;
+      background-color: blueviolet;
+    }
+
+    button {
+      height: 30px;
+      width: 120px;
+      color: white;
+      border: none;
+      background-color: blueviolet;
+    }
+  </style>
+  <script>
+    $(document).ready(function () {
+      $("#btn1").click(function () {
+        $("#form1").show(2000)
+      })
+
+      $("#btn2").click(function () {
+        $("#form1").fadeIn(2000)
+      })
+
+      $("#btn3").click(function () {
+        $("#form1").slideDown(2000)
+      })
+    })
+  </script>
+</head>
+
+<body>
+  <button id="btn1">Show</button>
+  <button id="btn2">FadeIn</button>
+  <button id="btn3">SlideDown</button>
+
+  <form action="" name="form1" id="form1">
+    <h1 style="text-align: center">Register</h1>
+    <!-- name -->
+    <div class="row">
+      <div class="col-1">
+        <label for="">Full name</label>
+      </div>
+      <div class="col-2">
+        <input type="text" id="fname" onkeyup="return name_reg_ex()" onblur="return first_name_check()" />
+        <span id="msg1"></span>
+      </div>
+    </div>
+    <!-- gender -->
+    <div class="row">
+      <div class="col-1">
+        <label for="">Gender</label>
+      </div>
+      <div class="col-2">
+        <input type="radio" name="gen" id="male" />Male
+        <input type="radio" name="gen" id="female" />Female
+        <input type="radio" name="gen" id="other" />Other
+        <span id="msg2"></span>
+      </div>
+    </div>
+    <!-- Date of birth -->
+    <div class="row">
+      <div class="col-1">
+        <label for="">Date of Birth</label>
+      </div>
+      <div class="col-2">
+        <input type="date" name="" id="dob" />
+        <span id="msg3"></span>
+      </div>
+    </div>
+    <!-- address -->
+    <div class="row">
+      <div class="col-1">
+        <label for="">Address</label>
+      </div>
+      <div class="col-2">
+        <textarea name="" class="addr" id="addr" cols="40" rows="3" onchange="return address_range()"></textarea>
+        <br />
+        <span id="msg4"></span>
+      </div>
+    </div>
+
+    <!-- city -->
+    <div class="row">
+      <div class="col-1">
+        <label for="">Select City</label>
+      </div>
+      <div class="col-2">
+        <select name="" id="city">
+          <option value="false">---select---</option>
+          <option value="">Surat</option>
+          <option value="">Baroda</option>
+          <br />
+          <span id="citymsg"></span>
+        </select>
+      </div>
+    </div>
+    <!-- mobile no -->
+    <div class="row">
+      <div class="col-1">
+        <label for="">Mobile No</label>
+      </div>
+      <div class="col-2">
+        <input type="text" name="" id="mno" onkeyup="return reg_ex_mobile()" maxlength="10"
+          onchange="return mobile_length()" />
+        <br />
+        <span id="msg5"></span>
+        <br />
+        <span id="msg6"></span>
+      </div>
+    </div>
+
+    <!-- email  id -->
+    <div class="row">
+      <div class="col-1">
+        <label for="">Email Id</label>
+      </div>
+      <div class="col-2">
+        <input type="text" name="" id="mail" onkeyup="return email_reg_ex()" />
+        <span id="msg7"></span>
+      </div>
+    </div>
+
+    <!-- password -->
+    <div class="row">
+      <div class="col-1">
+        <label for="">Password</label>
+      </div>
+      <div class="col-2">
+        <input type="password" name="" id="pass" onkeyup="return pass_reg_ex()" />
+        <span id="msg8"></span>
+      </div>
+    </div>
+
+    <!-- confirm password -->
+    <div class="row">
+      <div class="col-1">
+        <label for="">Confirm Password</label>
+      </div>
+      <div class="col-2">
+        <input type="password" name="" id="cpass" onkeyup="return check_pass()" />
+        <span id="msg9"></span>
+      </div>
+    </div>
+
+    <!-- show password -->
+    <div class="row">
+      <div class="col-1"></div>
+      <div class="col-2">
+        <input type="checkbox" onclick="return show_pass()" />
+        <label for="">Show Password</label>
+      </div>
+    </div>
+    <!-- button -->
+    <div class="row">
+      <div class="col-1"></div>
+      <div class="col-2">
+        <button type="button" onclick="return check_form_valid()" id="btn">
+          Register
+        </button>
+      </div>
+    </div>
+
+    <div>
+      <h3 style="color: red">
+        Note : enter password least one lowercase letter, one uppercase
+        letter, one numeric digit, and one special character in between 8 to
+        12
+      </h3>
+    </div>
+  </form>
+
+  <!-- <script>
+      let btn = document.getElementById("btn");
+      btn.addEventListener("click", function () {
+        let city = document.getElementById("city").value;
+        if (city == "") {
+          document.getElementById("msg10").innerHTML = "select city";
+          return false;
+        }
+      });
+    </script> -->
+</body>
+
+</html>
