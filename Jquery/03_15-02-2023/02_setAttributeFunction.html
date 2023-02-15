@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.6.3.js" integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM=" crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(function(){
+            $("#btn1").click(function(){
+                $("p").text("This is jquery library")
+            })
+
+            $("#btn2").click(function(){
+                $("p").html("<b><i>This is jquery library</i></b>")
+            })
+
+            $("#btn3").click(function(){
+                $("input").val("Hello world!!!!")
+            })
+        })
+    </script>
+</head>
+<body>
+    <!-- there are get and set attribute functions : 
+        (1) html() (2) text()  (3) val()
+    -->
+
+    <button id="btn1">set text</button>
+    <button id="btn2">set html</button>
+    <button id="btn3">set val</button>
+
+    <p>hello world</p>
+
+    <input type="text" name="" id="" value="Hello user!!!" readonly>
+</body>
+</html>

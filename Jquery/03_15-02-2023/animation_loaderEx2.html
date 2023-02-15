@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.6.3.js" integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM=" crossorigin="anonymous"></script>
+    <script>
+      $(document).ready(function(){
+        $(".main").mouseleave(function(){
+          $(".main").stop();
+        })
+      })
+    </script>
+    <style>
+      .main {
+        height: 200px;
+        width: 200px;
+        border-top: 3px solid rgb(1, 37, 1);
+        border-bottom: 3px solid transparent;
+        border-left: 3px solid transparent;
+        border-right: 3px solid transparent;
+        border-radius: 50%;
+        margin: 150px auto;
+        position: relative;
+        animation: loader 2s ease infinite;
+      }
+      .sub-main {
+        height: 150px;
+        width: 150px;
+        border-bottom: 3px solid green;
+        border-top: 3px solid transparent;
+        border-left: 3px solid transparent;
+        border-right: 3px solid transparent;
+        border-radius: 50%;
+        position: absolute;
+        top: 25px;
+        left: 25px;
+        animation: loader 2s ease infinite;
+      }
+      .sub {
+        height: 100px;
+        width: 100px;
+        border-top: 3px solid rgb(91, 142, 15);
+        border-bottom: 3px solid transparent;
+        border-left: 3px solid transparent;
+        border-right: 3px solid transparent;
+        border-radius: 50%;
+        position: absolute;
+        top: 25px;
+        left: 25px;
+        animation: loader 2s ease infinite;
+      }
+      @keyframes loader {
+        0% {
+          transform: rotate(0deg);
+        }
+        100% {
+          transform: rotate(360deg);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main">
+      <div class="sub-main">
+        <div class="sub"></div>
+      </div>
+    </div>
+  </body>
+</html>
