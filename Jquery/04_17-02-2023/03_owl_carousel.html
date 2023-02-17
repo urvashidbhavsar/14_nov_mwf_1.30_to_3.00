@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.6.3.js" integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM=" crossorigin="anonymous"></script>
+      <!-- owl carousel css cdn -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+    <!-- owl carousel js cdn -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.js"></script>
+    <style>
+        img{
+            height: 200px;
+            width: 200px;
+        }
+    </style>
+    <script>
+        $(document).ready(function(){
+            $('.owl-carousel').owlCarousel({
+            loop:true,
+            margin:20,
+            nav:false,
+            dots:false,
+            autoplay:true,
+            autoplayTimeout:1000,
+            autoplayHoverPause:true,
+            responsive:{
+                0:{
+                    items:1
+                },
+                576:{
+                    items:2
+                },
+                768:{
+                    items:3
+                },
+                992:{
+                    items:4
+                },
+                1200:{
+                    items:5
+                }
+            }
+        })
+        })
+    </script>
+</head>
+<body>
+    <div class="owl-theme owl-carousel">
+        <div class="img">
+            <img src="images/img1.jpg" alt="">
+        </div>
+        <div class="img">
+            <img src="images/img2.jpg" alt="">
+        </div>
+        <div class="img">
+            <img src="images/img3.webp" alt="">
+        </div>
+        <div class="img">
+            <img src="images/img4.jpg" alt="">
+        </div>
+        <div class="img">
+            <img src="images/img5.jpg" alt="">
+        </div>
+        <div class="img">
+            <img src="images/img6.jpg" alt="">
+        </div>
+        <div class="img">
+            <img src="images/img7.jpg" alt="">
+        </div>
+        <div class="img">
+            <img src="images/img8.jpg" alt="">
+        </div>
+    </div>
+</body>
+</html>
