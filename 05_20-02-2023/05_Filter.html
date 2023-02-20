@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <style>
+        .main{
+            display: flex;
+            gap: 20px;
+            padding: 10px;
+            border: 2px solid black;
+        }
+        p{
+            border: 2px solid red;
+            padding: 20px;
+        }
+        .head{
+            font-size: 30px;
+            color: blue;
+            background-color: lightcoral;
+        }
+    </style>
+    <script>
+        $(document).ready(function(){
+            $("#btn1").click(function(){
+            //   $("p").filter("#p1").addClass("head");
+            // $("p").first().addClass("head")
+            // $("p").last().addClass("head");
+
+            // in eq() it apply with index number
+            // $("p").eq(2).addClass("head");
+            $("p").not("#p3,#p2").addClass("head");
+
+        })
+    })
+    </script>
+</head>
+<body>
+    <button id="btn1">
+        click Here
+    </button>
+    <hr>
+    <div class="main">
+        <p id="p1">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae error dolores nemo. Fugiat, sunt autem obcaecati eius dolor quasi molestias, aspernatur libero esse nemo porro ipsum nulla modi, ex laborum?
+        </p>
+        <p id="p2">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi cupiditate, natus veniam possimus optio consequuntur debitis numquam. Accusantium quia, vitae autem rerum pariatur esse dignissimos deleniti sint nobis illum numquam!
+        </p>
+        <p id="p3">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel quisquam perspiciatis reprehenderit tenetur dolor, laboriosam itaque incidunt, eos repellendus veritatis illo sed odit explicabo a magnam aperiam rem iste harum?
+        </p>
+    </div>
+</body>
+</html>
