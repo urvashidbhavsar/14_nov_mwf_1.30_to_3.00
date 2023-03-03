@@ -1,0 +1,43 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* ============= header ============= */
+.navigation{
+    background-color: lightgrey;
+}
+.navigation .logo{
+    font-size: 40px;
+}
+.navigation .logo-chng{
+    color: #ff7361;
+    font-weight: 900;
+}
+.navigation .menu-nav{
+    display: flex !important;
+    justify-content: end;
+    width: 100%;
+}
+.navigation .menu-nav form{
+    position: relative;
+}
+.navigation .menu-nav form button{
+    position: absolute;
+    top: 2px;
+    right: 13px;
+    border-radius: 50%;
+    height: 32px;
+    width: 32px;
+    border: none;
+    background-color: #ff7361;
+    color: white;
+}
+
+
+@media (max-width:576px) {
+    .menu-nav{
+        display: flex !important;
+        justify-content: left !important;
+    }
+}
