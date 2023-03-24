@@ -1,0 +1,225 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    margin: 0px 60px;
+}
+a{
+    text-decoration: none;
+}
+ul{
+    list-style:  none;
+}
+p,h4{
+    font-family: "Montserrat";
+}
+h1,h2{
+    font-family: "Grand Hotel";
+}
+/* ========= header ============= */
+header{
+    background-color: lightseagreen;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1111;
+}
+header .header-p{
+    padding: 20px 0px;
+}
+header .header-flex{
+    display: flex;
+    align-items: center;
+}
+header .header-flex .logo{
+    flex: 1;
+}
+header .header-flex nav{
+    flex: 1;
+}
+header .header-flex nav ul{
+    display: flex;
+    justify-content: space-evenly;
+}
+header .header-flex nav a{
+    font-size: 20px;
+    font-family: "Montserrat";
+    color: white;
+}
+.home-image .bg-img{
+    position: relative;
+}
+.home-image .bg-img img{
+    height: auto;
+    max-width: 100%;
+}
+/* .home-image .bg-img::after{
+    content: "";
+    background-image: url(header-image.png);
+    height: auto;
+    width: 400px;
+    display: inline-block;
+} */
+.home-image .sub-img{
+    position: absolute;
+    top: 0;
+    left: 450px;
+}
+.home-image .sub-img img{
+    height: 800px;
+    max-width: 100%;
+}
+.home-image .sub-img .text{
+    position: absolute;
+    top:200px;
+    left: 200px;
+    color: white;
+}
+.home-image .sub-img .text h1{
+    font-size: 80px;
+    color: rgb(255, 194, 0);
+}
+.home-image .sub-img .text p{
+    font-size: 20px;
+    letter-spacing: 1px;
+    padding-bottom: 20px;
+}
+.home-image .sub-img .text button{
+    height: 40px;
+    width: 130px;
+    background-color: rgb(255, 194, 0);
+    color: rgb(51, 51, 51);
+    border-radius: 5px;
+    border:none;
+    outline: none;
+    font-weight: 900;
+    font-family: "Montserrat";
+    text-transform: uppercase;
+}
+
+/* ================ seller section ================ */
+.best-seller .seller-p{
+    padding: 50px 0px;
+}
+.best-seller .heading{
+    text-align: center;
+    padding-bottom: 20px;
+}
+.best-seller .heading h1{
+    font-size: 60px;
+}
+.best-seller .heading p{
+    font-size: 20px;
+}
+.best-seller .grid-card{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    justify-items: center;
+    gap: 20px;
+}
+.best-seller .grid-card img{
+    height: auto;
+    max-width: 100%;
+}
+.best-seller .grid-card .card
+{
+    text-align: center;
+    width: 300px;
+}
+.best-seller .grid-card .text h2{
+    font-size: 40px;
+    color: rgb(64, 64, 64);
+}
+/* ============= oriantal-test =============== */
+.oriantal-test{
+    background-image: url(images/pattern1.png);
+}
+.oriantal-test .ori-padding{
+    padding: 50px 0px;
+}
+.oriantal-test .test{
+    display: flex;
+    align-items: center;
+}
+.oriantal-test .test .left-image{
+    flex: 1;
+    padding: 50px;
+}
+.oriantal-test .test .left-image img{
+    max-width: 100%;
+    height: auto;
+}
+.oriantal-test .test .right-content{
+    flex: 1;
+    /* padding: 80px 0px; */
+}
+.oriantal-test .test .right-content h1{
+    font-size: 80px;
+    color: rgb(255, 194, 0);
+    padding-bottom: 40px;
+}
+.oriantal-test .test .right-content p{
+    color: white;
+    font-size: 20px;
+    padding-bottom: 40px;
+}
+.oriantal-test .test .right-content button{
+    height: 40px;
+    width: 130px;
+    background-color: rgb(255, 194, 0);
+    color: rgb(51, 51, 51);
+    border-radius: 5px;
+    border:none;
+    outline: none;
+    font-weight: 900;
+    font-family: "Montserrat";
+    text-transform: uppercase;
+}
+/* ============== statistics ============== */
+.statistics{
+background-color: rgb(48,48,48);
+}
+.statistics .bg-image{
+    background-image: url(images/pattern2.png);
+    background-position:center;
+}
+.statistics .stat-padding{
+    padding: 100px 0px;
+}
+.statistics .heading{
+    padding-bottom: 50px;
+    text-align: center;
+}
+.statistics .heading h1{
+    font-size: 80px;
+    color: rgb(255, 194, 0);
+}
+.statistics .heading p{
+    color: white;
+    font-size: 20px;
+}
+.statistics .grid-card{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    justify-items: center;
+}
+.statistics .grid-card .card-count{
+    border: 2px solid white;
+    text-align: center;
+    height: 200px;
+    width: 200px;
+    display: grid;
+    place-content: center;
+    border-radius: 50%;
+}
+.statistics .grid-card .card-count h4{
+    font-size: 40px;
+    color :rgb(255, 194, 0)
+}
+.statistics .grid-card .card-count p{
+    font-size: 30px;
+    color: white;
+    text-transform: uppercase;
+}

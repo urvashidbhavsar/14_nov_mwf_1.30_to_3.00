@@ -1,0 +1,95 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    margin: 0px 60px;
+}
+a{
+    text-decoration: none;
+}
+ul{
+    list-style:  none;
+}
+/* ========= header ============= */
+header{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1111;
+}
+header .header-p{
+    padding: 20px 0px;
+}
+header .header-flex{
+    display: flex;
+    align-items: center;
+}
+header .header-flex .logo{
+    flex: 1;
+}
+header .header-flex nav{
+    flex: 1;
+}
+header .header-flex nav ul{
+    display: flex;
+    justify-content: space-evenly;
+}
+header .header-flex nav a{
+    font-size: 20px;
+    font-family: "Montserrat";
+    color: white;
+}
+.home-image .bg-img{
+    position: relative;
+}
+.home-image .bg-img img{
+    height: auto;
+    max-width: 100%;
+}
+/* .home-image .bg-img::after{
+    content: "";
+    background-image: url(header-image.png);
+    height: auto;
+    width: 400px;
+    display: inline-block;
+} */
+.home-image .sub-img{
+    position: absolute;
+    top: 0;
+    left: 450px;
+}
+.home-image .sub-img img{
+    height: 800px;
+    max-width: 100%;
+}
+.home-image .sub-img .text{
+    position: absolute;
+    top:200px;
+    left: 200px;
+    color: white;
+}
+.home-image .sub-img .text h1{
+    font-family: "Grand Hotel";
+    font-size: 80px;
+    color: rgb(255, 194, 0);
+}
+.home-image .sub-img .text p{
+    font-family: "Montserrat";
+    font-size: 20px;
+    letter-spacing: 1px;
+    padding-bottom: 20px;
+}
+.home-image .sub-img .text button{
+    height: 40px;
+    width: 130px;
+    background-color: rgb(255, 194, 0);
+    color: rgb(51, 51, 51);
+    border-radius: 5px;
+    border:none;
+    outline: none;
+    font-weight: 900;
+    font-family: "Montserrat";
+    text-transform: uppercase;
+}
